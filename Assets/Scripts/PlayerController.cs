@@ -6,9 +6,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _rigidbody;
+    [SerializeField] public Rigidbody _rigidbody;
     [SerializeField] private FixedJoystick _joystick;
     [SerializeField] private Animator _animator;
+
 
     [SerializeField] private float moveSpeed;
 
@@ -21,12 +22,27 @@ public class PlayerController : MonoBehaviour
 
             transform.rotation= Quaternion.LookRotation(_rigidbody.velocity);
             _animator.SetBool("isWalking", true);
+            float speed = _rigidbody.velocity.magnitude;
+
+            if (speed > 3)
+            {
+
+                _animator.SetBool("isRunning", true);
+
+            }
+            else if (speed < 3)
+            {
+                _animator.SetBool("isRunning", false);
+            }
 
         }
         else
         {
             _animator.SetBool("isWalking", false);
         }
+
+        
+        
     }
 
 
