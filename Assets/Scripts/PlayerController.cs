@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            _animator.SetBool("isRunning", false);
             _animator.SetBool("isWalking", false);
         }
 
