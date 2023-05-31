@@ -195,8 +195,8 @@ GameObject:
   m_Component:
   - component: {fileID: 357509226}
   - component: {fileID: 357509229}
-  - component: {fileID: 357509231}
   - component: {fileID: 357509230}
+  - component: {fileID: 357509231}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -244,13 +244,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 8.38, z: -5.08}
+  m_FollowOffset: {x: 0.025788784, y: 17.441341, z: -18.557583}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
   m_AngularDampingMode: 0
   m_PitchDamping: 0
-  m_YawDamping: 2
+  m_YawDamping: 5
   m_RollDamping: 0
   m_AngularDamping: 0
 --- !u!114 &357509231
@@ -398,11 +398,11 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 1
+  m_StandbyUpdate: 2
   m_LookAt: {fileID: 1949019067}
   m_Follow: {fileID: 1949019067}
   m_Lens:
-    FieldOfView: 55.2
+    FieldOfView: 20
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 50
@@ -426,15 +426,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613359012}
-  m_LocalRotation: {x: 0.49071777, y: 0, z: 0, w: 0.87131864}
-  m_LocalPosition: {x: -2.6257887, y: 8.118659, z: -2.1224174}
+  m_LocalRotation: {x: 0.36831874, y: -0.00064598414, z: 0.00025591932, w: 0.92969936}
+  m_LocalPosition: {x: -2.6, y: 17.18, z: -15.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 357509226}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 41.872, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 46, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 50
-  field of view: 55.2
+  field of view: 20
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -606,8 +606,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.49071777, y: 0, z: 0, w: 0.87131864}
-  m_LocalPosition: {x: -2.6257887, y: 8.118659, z: -2.1224174}
+  m_LocalRotation: {x: 0.36831874, y: -0.00064598414, z: 0.00025591932, w: 0.92969936}
+  m_LocalPosition: {x: -2.6, y: 17.18, z: -15.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
